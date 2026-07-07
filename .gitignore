@@ -1,0 +1,7 @@
+.venv/
+data/raw/train.csv
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+*.png
+.DS_Store
