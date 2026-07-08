@@ -1,0 +1,35 @@
+{
+  "dropped_cols": [
+    "Alley",
+    "MasVnrType",
+    "PoolQC",
+    "Fence",
+    "MiscFeature"
+  ],
+  "impute_stats": {
+    "LotFrontage": {
+      "type": "numeric",
+      "value": 69.0
+    },
+    "MasVnrArea": {
+      "type": "numeric",
+      "value": 0.0
+    },
+    "BsmtExposure": {
+      "type": "categorical",
+      "value": "No"
+    },
+    "BsmtFinType1": {
+      "type": "categorical",
+      "value": "Unf"
+    },
+    "BsmtFinType2": {
+      "type": "categorical",
+      "value": "Unf"
+    },
+    "Electrical": {
+      "type": "categorical",
+      "value": "SBrkr"
+    }
+  }
+}
