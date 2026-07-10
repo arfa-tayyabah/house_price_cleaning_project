@@ -7,9 +7,6 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
 
 # --- Dynamic Paths ---
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -105,7 +102,7 @@ def clean_pipeline(df: pd.DataFrame, impute_values: dict = None) -> tuple[pd.Dat
 
 
 def main():
-    logging.info("Starting prediction pipeline...")
+
 
     # --- 1. Load and Clean Training Data ---
     df_train = pd.read_csv(TRAIN_PATH)
