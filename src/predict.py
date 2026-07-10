@@ -21,8 +21,6 @@ SUBMISSION_PATH = PROJECT_ROOT / "submission.csv"
 FEATURES = ["Quality_Area", "TotalSF", "TotalBath", "HouseAge", "HasGarage"]
 
 GARAGE_TEXT_COLS = ["GarageType", "GarageFinish", "GarageQual", "GarageCond"]
-
-
 # --- Helper Functions ---
 
 def fix_garage_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -33,7 +31,6 @@ def fix_garage_columns(df: pd.DataFrame) -> pd.DataFrame:
     if "GarageYrBlt" in df.columns:
         df["GarageYrBlt"] = df["GarageYrBlt"].fillna(0)
     return df
-
 
 def compute_impute_values(df: pd.DataFrame) -> dict:
     """Compute median (numeric) / mode (categorical) fill values from a reference df."""
